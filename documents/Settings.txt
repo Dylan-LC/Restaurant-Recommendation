@@ -1,0 +1,41 @@
+# Basic Install
+- install ruby [via RVM for example]
+- install node
+- bundle install
+
+
+TODO:
+Choose A Version of React to install
+  Either 'react_on_rails' or 'react-rails'
+  'react-rails' is the one I used
+Use command-line tools to create a new Rails project
+  Sth. like rails new xxxxx
+
+
+# Heroku Link:
+
+# Run this command each time before push to Heroku
+rm public/packs/*.js public/packs/*.gz public/packs/*.map
+RAILS_ENV=production bundle exec rake assets:precompile
+RAILS_ENV=production bundle exec rake assets:clean
+
+# Heroku real-time log console
+heroku logs -t
+
+# Heroku bash shell
+heroku run bash
+
+# Heroku Database Reset
+heroku pg:reset DATABASE
+
+# Heroku website start/end
+heroku ps:scale web=0
+heroku ps:scale web=1
+
+# Heroku show processes as well as Free dyno hours
+heroku ps
+
+# Heroku Server Setting
+
+
+
