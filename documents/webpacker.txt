@@ -1,0 +1,12 @@
+Webpack Gem:
+    Basic:
+        Compile *.js in app/javascript/packs
+        Refer bundled file via <%= javascript_pack_tag 'application' %>
+    Upgrade:
+        bundle update webpacker
+        yarn upgrade @rails/webpacker --latest
+        yarn upgrade webpack-dev-server --latest
+
+
+
+
